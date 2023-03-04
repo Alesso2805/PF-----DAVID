@@ -125,12 +125,12 @@ header {
     transition: color 0.3s ease;
     color: black;
     text-decoration: none;
-}
 
-.reservas:hover {
-    border: 1px red solid;
-    color:red;
-    cursor: pointer;
+    &:hover {
+        border: 1px red solid;
+        color:red;
+        cursor: pointer;
+    }
 }
 
 header nav div a {
