@@ -138,11 +138,11 @@ header nav div a {
     margin: 0px 40px 0px 0px;
     transition: color 0.3s ease;
     text-decoration: none;
-}
 
-header nav div a:hover{
-    color:rgb(0, 0, 0);
-    cursor: pointer;
+    &:hover {
+        color:rgb(0, 0, 0);
+        cursor: pointer;
+    }
 }
 
 body {
@@ -174,11 +174,11 @@ footer {
     transition: color 0.3s ease;
     color: white;
     text-decoration: none;
-}
 
-.icon:hover {
-    color:rgb(255, 0, 0);
+    &:hover {
+        color:rgb(255, 0, 0);
     cursor: pointer;
+    }
 }
 
 text {
@@ -189,14 +189,15 @@ text {
     transition: color 0.3s ease;
     color: white;
     text-decoration: none;
+
+    &:hover {
+        color:rgb(255, 0, 0);
+        cursor: pointer;
+    }
 }
 
 .terms-main {
     margin: 10px;
-}
-.extern:hover {
-    color:rgb(255, 0, 0);
-    cursor: pointer;
 }
 
 #local-title {
