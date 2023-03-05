@@ -156,13 +156,6 @@ footer {
     color: white;
 }
 
-.icon {
-    float: right;
-    margin: 15px;
-    width: 30px;
-    height: 30px;
-}
-
 .logos {
     display: flex;
     justify-content: center;
@@ -174,6 +167,10 @@ footer {
     transition: color 0.3s ease;
     color: white;
     text-decoration: none;
+    float: right;
+    margin: 15px;
+    width: 30px;
+    height: 30px;
 
     &:hover {
         color:rgb(255, 0, 0);
@@ -181,7 +178,7 @@ footer {
     }
 }
 
-text {
+.text {
     text-align: center;
 }
 
