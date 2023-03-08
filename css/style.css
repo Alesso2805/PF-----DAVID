@@ -1,5 +1,8 @@
-body {
-  margin: 0;
+/* VARIABLES */
+.header-head {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .nav-container {
@@ -12,6 +15,247 @@ body {
   margin: 0px 0px 0px 50px;
   cursor: pointer;
   text-decoration: none;
+}
+
+#selecciones {
+  margin: 0px 60px 0px 0px;
+  font-size: 20px;
+}
+
+.sub-selec {
+  color: white;
+  margin: 0px 40px 0px 0px;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+.sub-selec:hover {
+  color: black;
+  cursor: pointer;
+}
+
+#welcome {
+  display: flex;
+  justify-content: center;
+}
+
+.welcome-body {
+  margin-top: 130px;
+  margin-bottom: 130px;
+}
+
+.title {
+  font-size: 100px;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 80px;
+}
+
+.reservas {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  border: 1px black solid;
+  transition: color 0.3s ease;
+  color: black;
+  text-decoration: none;
+}
+.reservas:hover {
+  border: 1px red solid;
+  color: red;
+  cursor: pointer;
+}
+
+.text {
+  text-align: center;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0px 20px 0px;
+}
+
+.icon {
+  transition: color 0.3s ease;
+  color: white;
+  text-decoration: none;
+  float: right;
+  margin: 15px;
+  width: 30px;
+  height: 30px;
+}
+.icon:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.terms-main {
+  margin: 10px;
+}
+
+.extern {
+  transition: color 0.3s ease;
+  color: white;
+  text-decoration: none;
+}
+.extern:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.container {
+  display: grid;
+  justify-content: justify;
+  max-width: 1200px;
+  margin: 50px auto 0px;
+  padding: 0px 32px 88px;
+}
+
+.title-menu {
+  display: flex;
+  justify-content: center;
+  font-size: 70px;
+  margin-bottom: 40px;
+}
+
+.entry-title {
+  font-size: 40px;
+}
+
+.boxes {
+  display: grid;
+  flex-direction: column;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-column-gap: 25px;
+  -moz-column-gap: 25px;
+  column-gap: 25px;
+  grid-row-gap: 25px;
+  row-gap: 25px;
+  padding-top: 25px;
+  padding-bottom: 50px;
+  margin-top: 0;
+  justify-items: center;
+}
+
+.card {
+  border-radius: 24px;
+  width: 18rem;
+}
+
+.card-img-top {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  height: 270px;
+}
+
+.card-body {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.card-title {
+  font-size: 25px;
+  font-weight: 100;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.btn-primary {
+  box-sizing: border-box;
+  cursor: pointer;
+  padding: 6px 19px 6px;
+  border-radius: 15px;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  background: #dd042b;
+  border: none;
+  text-align: center;
+  transition: all 0.2s;
+  color: white;
+  width: 100%;
+  --bs-btn-hover-bg: $black;
+  --bs-btn-active-bg: $black;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+#contact-us {
+  font-size: 70px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#ribeye {
+  width: 250px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.tabla-reserva {
+  font-size: 20px;
+  font-weight: 100;
+  list-style: none;
+  margin-bottom: 20px;
+  padding: 0px;
+}
+
+.toma-de-reservas {
+  margin-bottom: 50px;
+  font-size: 18px;
+}
+
+.horario-reserva {
+  font-weight: 100;
+}
+
+#local-title {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 70px;
+  margin: 50px 0px 40px 0px;
+}
+
+#text-under-title {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 100;
+  text-align: center;
+  margin: 10px 10px 60px 10px;
+}
+
+.box {
+  width: 330px;
+  height: 250px;
+  background: #fff;
+  border-radius: 15px;
+  padding: 15px;
+  border: 1px solid #ccc;
+}
+
+.direccion, .numero {
+  font-weight: 100;
+  font-size: 18px;
+}
+
+.fono {
+  display: flex;
+  width: auto;
+}
+
+.img-telefono {
+  display: flex;
 }
 
 #title-terms {
@@ -44,16 +288,6 @@ body {
   margin-bottom: 8px;
 }
 
-.terms-sub-subtitles {
-  display: flex;
-  justify-content: left;
-  margin-bottom: 5px;
-}
-
-.conditions {
-  margin-bottom: 0px;
-}
-
 .para {
   display: flex;
   justify-content: center;
@@ -84,181 +318,55 @@ body {
   text-decoration: underline;
 }
 
-header {
-  background-color: red;
-  padding: 2rem 2rem;
-}
-
-.header-head {
+.terms-sub-subtitles {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: left;
+  margin-bottom: 5px;
 }
 
-#selecciones {
-  margin: 0px 60px 0px 0px;
-  font-size: 20px;
+.conditions {
+  margin-bottom: 0px;
 }
 
-.welcome-body {
-  margin-top: 130px;
-  margin-bottom: 130px;
-}
-
-.title {
-  font-size: 100px;
-  text-align: center;
-  margin-top: 0px;
-  margin-bottom: 80px;
-}
-
-#welcome {
+#reserve-title {
   display: flex;
   justify-content: center;
-}
-
-.reservas {
-  display: flex;
-  justify-content: center;
-  font-size: 30px;
-  border: 1px black solid;
-  transition: color 0.3s ease;
-  color: black;
-  text-decoration: none;
-}
-.reservas:hover {
-  border: 1px red solid;
-  color: red;
-  cursor: pointer;
-}
-
-header nav div a {
-  color: white;
-  margin: 0px 40px 0px 0px;
-  transition: color 0.3s ease;
-  text-decoration: none;
-}
-header nav div a:hover {
-  color: black;
-  cursor: pointer;
-}
-
-body {
-  font-family: "Oswald", sans-serif;
-  margin: 0;
-}
-
-footer {
-  background-color: black;
-  padding: 20px 40px 20px 40px;
-  color: white;
-}
-
-.logos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0px 0px 20px 0px;
-}
-
-.icon {
-  transition: color 0.3s ease;
-  color: white;
-  text-decoration: none;
-  float: right;
-  margin: 15px;
-  width: 30px;
-  height: 30px;
-}
-.icon:hover {
-  color: red;
-  cursor: pointer;
-}
-
-.text {
-  text-align: center;
-}
-
-.extern {
-  transition: color 0.3s ease;
-  color: white;
-  text-decoration: none;
-}
-.extern:hover {
-  color: red;
-  cursor: pointer;
-}
-
-.terms-main {
-  margin: 10px;
-}
-
-#local-title {
-  display: flex;
-  justify-content: center;
-  text-align: center;
   font-size: 70px;
-  margin: 50px 0px 40px 0px;
+  margin: 30px 0 20px 0;
 }
 
-#text-under-title {
-  display: flex;
-  justify-content: center;
-  font-size: 30px;
-  font-weight: 100;
-  text-align: center;
-  margin: 10px 10px 60px 10px;
-}
-
-.img-telefono {
-  display: flex;
-}
-
-.boxes {
+.table-reserve {
   display: grid;
-  flex-direction: column;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  grid-column-gap: 25px;
-  -moz-column-gap: 25px;
-  column-gap: 25px;
-  grid-row-gap: 25px;
-  row-gap: 25px;
-  padding-top: 25px;
-  padding-bottom: 50px;
-  margin-top: 0;
+  justify-content: center;
   justify-items: center;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  font-size: 25px;
+  text-align: center;
 }
 
-.image-carta {
-  background-size: auto;
+.form-control {
+  border-radius: 2rem;
+}
+
+#btn-reserva {
   display: flex;
   justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  position: relative;
-  background-image: 50px;
-  background-size: 50px;
-  width: 270px;
+  cursor: pointer;
+  padding: 10px 0 10px 0;
   border-radius: 15px;
+  font-size: 20px;
+  background: #dd042b;
+  color: #fff;
+  width: 100%;
+  margin: 20px 0 50px 0;
 }
 
-.box {
-  width: 330px;
-  height: 250px;
-  background: #fff;
-  border-radius: 15px;
-  padding: 15px;
-  border: 1px solid #ccc;
-}
-
-.direccion, .numero {
-  font-weight: 100;
-  font-size: 18px;
-}
-
-.fono {
+#about-us {
   display: flex;
-  width: auto;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 100px;
+  margin-top: 80px;
 }
 
 .sobre-nosotros {
@@ -279,32 +387,220 @@ footer {
   margin-top: 50px;
 }
 
-#about-us {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin-bottom: 100px;
-  margin-top: 80px;
+@media screen and (min-width: 577px) and (max-width: 767px) {
+  .nav-container {
+    flex-direction: column;
+  }
+  #main-title {
+    font-size: 50px;
+    text-align: center;
+    justify-content: center;
+    margin-left: 0;
+  }
+  #selecciones {
+    font-size: 15px;
+    margin-left: 60px;
+    margin-right: 0;
+    text-align: center;
+  }
+  .title {
+    font-size: 50px;
+  }
+  footer {
+    font-size: 0.75rem;
+  }
+  .sub-selec {
+    justify-content: center;
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  .welcome-body {
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+  .sobre-nosotros {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .paragraph-about-us {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: 100;
+    font-size: 20px;
+    width: 500px;
+    margin-top: 30px;
+  }
+  #about-us {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+    margin-top: 30px;
+  }
+  #text-under-title {
+    font-size: 25px;
+    margin: 10px 10px 20px 10px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .boxes {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  #selecciones {
+    margin: 0;
+  }
+  .collapse-horizontal {
+    display: flex;
+    justify-content: center;
+  }
+  .sub-selec {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  .paragraph-about-us {
+    width: 700px;
+  }
+  .title {
+    font-size: 67px;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .boxes {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  #selecciones {
+    margin: 0;
+  }
+  .collapse-horizontal {
+    display: flex;
+    justify-content: center;
+  }
+  .sub-selec {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 700px) {
+  #selecciones {
+    margin: 0;
+  }
+  .collapse-horizontal {
+    display: flex;
+    justify-content: center;
+  }
+  .sub-selec {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  .boxes {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .paragraph-about-us {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #main-title {
+    font-size: 30px;
+    margin-left: 30px;
+    justify-content: center;
+    text-align: center;
+  }
+  #selecciones {
+    margin: 0;
+  }
+  .title {
+    font-size: 30px;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  .collapse-horizontal {
+    display: flex;
+    justify-content: center;
+  }
+  head {
+    width: 100%;
+  }
+  .sub-selec {
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  .box {
+    width: 250px;
+    height: 230px;
+  }
+  #about-us {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+    margin-top: 30px;
+  }
+  .sobre-nosotros {
+    font-size: 30px;
+  }
+  .paragraph-about-us {
+    width: 300px;
+    margin-right: 0;
+    font-size: 15px;
+    margin-top: 0;
+  }
+  .reservas {
+    font-size: 20px;
+  }
+  .tabla-reserva {
+    font-size: 15px;
+  }
+  #ribeye {
+    width: 200px;
+  }
+  .toma-de-reserva {
+    font-size: 15px;
+  }
+  #local-title {
+    font-size: 35px;
+  }
+  #text-under-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+}
+body {
+  margin: 0;
 }
 
-#contact-us {
-  font-size: 70px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+header {
+  background-color: red;
+  padding: 2rem 2rem;
 }
 
-#ribeye {
-  width: 250px;
-  border-radius: 20px;
-  margin-bottom: 20px;
+body {
+  font-family: "Oswald", sans-serif;
+  margin: 0;
 }
 
-.tabla-reserva {
-  font-size: 20px;
-  font-weight: 100;
-  list-style: none;
-  margin-bottom: 20px;
-  padding: 0px;
+footer {
+  background-color: black;
+  padding: 20px 40px 20px 40px;
+  color: white;
 }
 
 li {
@@ -315,118 +611,6 @@ li {
 a {
   text-decoration: none;
   color: black;
-}
-
-.contact {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-}
-
-.toma-de-reservas {
-  margin-bottom: 50px;
-  font-size: 18px;
-}
-
-.horario-reserva {
-  font-weight: 100;
-}
-
-.title-menu {
-  display: flex;
-  justify-content: center;
-  font-size: 70px;
-  margin-bottom: 40px;
-}
-
-.entry-title {
-  font-size: 40px;
-}
-
-.container {
-  display: grid;
-  justify-content: justify;
-  max-width: 1200px;
-  margin: 50px auto 0px;
-  padding: 0px 32px 88px;
-}
-
-.card {
-  border-radius: 24px;
-  width: 18rem;
-}
-
-.card-body {
-  width: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-}
-
-.card-title {
-  font-size: 25px;
-  font-weight: 100;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  padding-bottom: 20px;
-}
-
-.card-img-top {
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  height: 270px;
-}
-
-.btn-primary {
-  box-sizing: border-box;
-  cursor: pointer;
-  padding: 6px 19px 6px;
-  border-radius: 15px;
-  font-size: 20px;
-  font-family: "Oswald", sans-serif;
-  background: #dd042b;
-  border: none;
-  text-align: center;
-  transition: all 0.2s;
-  color: white;
-  width: 100%;
-  --bs-btn-hover-bg: $black;
-  --bs-btn-active-bg: $black;
-}
-
-#reserve-title {
-  display: flex;
-  justify-content: center;
-  font-size: 70px;
-  margin: 30px 0 20px 0;
-}
-
-.table-reserve {
-  display: grid;
-  justify-content: center;
-  justify-items: center;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  font-size: 25px;
-  text-align: center;
-}
-
-#btn-reserva {
-  display: flex;
-  justify-content: center;
-  cursor: pointer;
-  padding: 10px 0 10px 0;
-  border-radius: 15px;
-  font-size: 20px;
-  background: #dd042b;
-  color: #fff;
-  width: 100%;
-  margin: 20px 0 50px 0;
-}
-
-.form-control {
-  border-radius: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

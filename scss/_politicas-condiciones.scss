@@ -1,0 +1,69 @@
+#title-terms {
+    display: flex ;
+    justify-content: center;
+    color: $black;
+    font-size: 50px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.policy {
+    max-width: 800px;
+    margin: 50px auto 0px;
+    padding: 0px 32px 88px;
+}
+
+.terms-title {
+    display: flex ;
+    justify-content: center;
+    color: $black;
+    font-size: 30px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.terms-subtitles {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 8px;
+}
+
+.para {
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    font-weight: $light-weight;
+    margin-bottom: 15px;
+}
+
+.para-2 {
+    display: flex;
+    text-align: left;
+    font-weight: $light-weight;
+    margin-bottom: 50px;
+}
+
+.para-3 {
+    display: flex;
+    text-align: left;
+    font-weight: $light-weight;
+    margin-bottom: 15px;
+}
+
+.policy-link {
+    display: flex;
+    justify-content: left;
+    text-align: justify;
+    margin-bottom: 15px;
+    text-decoration: underline;
+}
+
+.terms-sub-subtitles {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 5px;
+}
+
+.conditions {
+    margin-bottom: 0px;
+}

@@ -1,0 +1,39 @@
+#local-title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: $big;
+    margin: 50px 0px 40px 0px;
+}
+
+#text-under-title {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: $light-weight;
+    text-align: center;
+    margin: 10px 10px 60px 10px;
+}
+
+.box {
+    width: 330px;
+    height: 250px;
+    background: #fff;
+    border-radius: 15px;
+    padding: 15px;
+    border: 1px solid $light-grey;
+}
+
+.direccion, .numero {
+    font-weight: $light-weight;
+    font-size: 18px;
+}
+
+.fono {
+    display: flex;
+    width: auto;
+}
+
+.img-telefono {
+    display: flex;
+}

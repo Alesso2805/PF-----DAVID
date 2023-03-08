@@ -1,0 +1,35 @@
+.contact {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#contact-us {
+    font-size: $big;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#ribeye {
+    width: 250px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.tabla-reserva {
+    font-size: 20px;
+    font-weight: $light-weight;
+    list-style: none;
+    margin-bottom: 20px;
+    padding:0px;
+}
+
+.toma-de-reservas {
+    margin-bottom: 50px;
+    font-size: 18px;
+}
+
+.horario-reserva {
+    font-weight: $light-weight;
+}

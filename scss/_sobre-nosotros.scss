@@ -1,0 +1,25 @@
+#about-us{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: 80px;
+}
+
+.sobre-nosotros {
+    font-size: $big;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.paragraph-about-us {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: $light-weight;
+    font-size: 24px;
+    width: 1000px;
+    margin-top: 50px;
+}

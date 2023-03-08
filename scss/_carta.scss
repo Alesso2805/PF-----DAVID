@@ -1,0 +1,77 @@
+.container {
+    display: grid;
+    justify-content: justify;
+    max-width: 1200px;
+    margin: 50px auto 0px;
+    padding: 0px 32px 88px;
+}
+
+.title-menu {
+    display: flex;
+    justify-content: center;
+    font-size: $big;
+    margin-bottom: 40px;
+}
+
+.entry-title {
+    font-size: 40px;
+}
+
+.boxes {
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    grid-column-gap: 25px;
+    -moz-column-gap: 25px;
+    column-gap: 25px;
+    grid-row-gap: 25px;
+    row-gap: 25px;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    margin-top: 0;
+    justify-items: center;
+}
+
+.card {
+    border-radius: 24px;
+    width: 18rem;
+}   
+
+.card-img-top { 
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 270px;
+}
+
+.card-body {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.card-title {
+    font-size: 25px;
+    font-weight: $light-weight;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.btn-primary {
+    box-sizing: border-box;
+    cursor: pointer;
+    padding: 6px 19px 6px;
+    border-radius: 15px;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    background: $light-dark-red;
+    border: none;
+    text-align: center;
+    transition: all .2s;
+    color: $white;
+    width: 100%;
+    --bs-btn-hover-bg: $black;
+    --bs-btn-active-bg: $black;
+}
