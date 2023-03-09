@@ -1,17 +1,13 @@
 #local-title {
-    display: flex;
-    justify-content: center;
-    text-align: center;
+    @include flex-center;
     font-size: $big;
     margin: 50px 0px 40px 0px;
 }
 
 #text-under-title {
-    display: flex;
-    justify-content: center;
+    @include flex-center;
     font-size: 30px;
     font-weight: $light-weight;
-    text-align: center;
     margin: 10px 10px 60px 10px;
 }
 

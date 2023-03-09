@@ -34,8 +34,7 @@
 }
 
 #welcome {
-    display: flex;
-    justify-content: center;
+    @include flex-center;
 }
 
 .welcome-body {
@@ -51,8 +50,7 @@
 }
 
 .reservas {
-    display: flex;
-    justify-content: center;
+    @include flex-center;
     font-size: 30px;
     border: 1px black solid;
     transition: color 0.3s ease;
@@ -71,8 +69,7 @@
 }
 
 .logos {
-    display: flex;
-    justify-content: center;
+    @include flex-center;
     align-items: center;
     margin: 0px 0px 20px 0px;
 }

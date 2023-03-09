@@ -45,10 +45,8 @@
     }
     
     .paragraph-about-us {
-        display: flex;
-        text-align: center;
+        @include flex-center;
         align-items: center;
-        justify-content: center;
         font-weight: 100;
         font-size: 20px;
         width: 500px;
@@ -69,7 +67,7 @@
     
     
     
-    }
+}
     
     @media screen and (max-width: 1024px) {
         .boxes {
@@ -84,12 +82,10 @@
             justify-content: center;
         }
     .sub-selec{
-            display: flex;
-            justify-content: center;
-            text-align: center;
-            margin-right: 0;
-            margin-bottom: 15px;
-        }
+        @include flex-center;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
     
         .paragraph-about-us {
             width: 700px;
@@ -116,12 +112,10 @@
             justify-content: center;
         }
     .sub-selec{
-            display: flex;
-            justify-content: center;
-            text-align: center;
-            margin-right: 0;
-            margin-bottom: 15px;
-        }
+        @include flex-center;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
     
     }
     
@@ -135,11 +129,9 @@
             justify-content: center;
         }
     .sub-selec{
-            display: flex;
-            justify-content: center;
-            text-align: center;
-            margin-right: 0;
-            margin-bottom: 15px;
+        @include flex-center;
+        margin-right: 0;
+        margin-bottom: 15px;
         }
     
         .boxes {
@@ -154,7 +146,7 @@
     
     @media screen and (max-width: 576px) {
         #main-title {
-            font-size: 30px;
+            font-size: 26px;
             margin-left: 30px;
             justify-content: center;
             text-align: center;
@@ -181,9 +173,7 @@
     
         .sub-selec{
             font-size: 15px;
-            display: flex;
-            justify-content: center;
-            text-align: center;
+            @include flex-center;
             margin-right: 0;
             margin-bottom: 15px;
         }
@@ -236,5 +226,9 @@
         #text-under-title {
             font-size: 20px;
             margin-bottom: 20px;
+        }
+        
+        .container-fluid {
+            --bs-gutter-x: 0;
         }
     }

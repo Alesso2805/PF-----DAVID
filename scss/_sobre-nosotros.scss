@@ -1,7 +1,5 @@
 #about-us{
-    display: flex;
-    justify-content: center;
-    text-align: center;
+    @include flex-center;
     margin-bottom: 100px;
     margin-top: 80px;
 }
@@ -14,10 +12,8 @@
 }
 
 .paragraph-about-us {
-    display: flex;
-    text-align: center;
+    @include flex-center;
     align-items: center;
-    justify-content: center;
     font-weight: $light-weight;
     font-size: 24px;
     width: 1000px;

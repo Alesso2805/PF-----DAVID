@@ -7,8 +7,7 @@
 }
 
 .title-menu {
-    display: flex;
-    justify-content: center;
+    @include flex-center;
     font-size: $big;
     margin-bottom: 40px;
 }
@@ -53,9 +52,7 @@
 .card-title {
     font-size: 25px;
     font-weight: $light-weight;
-    display: flex;
-    justify-content: center;
-    text-align: center;
+    @include flex-center;
     padding-bottom: 20px;
 }
 

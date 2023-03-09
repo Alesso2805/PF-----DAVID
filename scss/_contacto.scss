@@ -1,7 +1,5 @@
 .contact {
-    display: flex;
-    justify-content: center;
-    text-align: center;
+    @include flex-center;
     align-items: center;
 }
 
