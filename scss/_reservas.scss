@@ -1,5 +1,6 @@
 .table-container {
-    align-content: center
+    display: flex;
+    justify-content: center;
 }
 
 #reserve-title {
@@ -21,10 +22,15 @@
     border-radius: 2rem;
 }
 
+#button-reserve {
+    display: flex;
+    justify-content: center;
+}
+
 #btn-reserva {
     @include flex-center;
     cursor: pointer;
-    padding: 10px 0 10px 0;
+    padding: 10px 50px;
     border-radius: 15px;
     font-size: 20px;
     background: $light-dark-red;

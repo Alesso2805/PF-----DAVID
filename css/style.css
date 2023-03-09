@@ -364,7 +364,8 @@ a {
 }
 
 .table-container {
-  align-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 #reserve-title {
@@ -388,12 +389,17 @@ a {
   border-radius: 2rem;
 }
 
+#button-reserve {
+  display: flex;
+  justify-content: center;
+}
+
 #btn-reserva {
   display: flex;
   justify-content: center;
   text-align: center;
   cursor: pointer;
-  padding: 10px 0 10px 0;
+  padding: 10px 50px;
   border-radius: 15px;
   font-size: 20px;
   background: #dd042b;
@@ -624,7 +630,19 @@ a {
     margin-bottom: 20px;
   }
   .container-fluid {
-    --bs-gutter-x: 0;
+    --bs-gutter-x: 0px;
+  }
+  .header-head {
+    margin-right: 20px;
+  }
+  #reserve-title {
+    font-size: 50px;
+  }
+  .form-label {
+    font-size: 17px;
+  }
+  .form-control {
+    font-size: 11px;
   }
 }
 
