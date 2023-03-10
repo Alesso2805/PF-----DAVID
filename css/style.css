@@ -324,7 +324,6 @@ a {
 }
 
 .para {
-  display: flex;
   justify-content: center;
   text-align: justify;
   font-weight: 100;
@@ -602,7 +601,7 @@ a {
     margin-top: 30px;
   }
   .sobre-nosotros {
-    font-size: 30px;
+    font-size: 35px;
   }
   .paragraph-about-us {
     width: 300px;
@@ -640,9 +639,11 @@ a {
   }
   .form-label {
     font-size: 17px;
+    width: 60%;
   }
   .form-control {
     font-size: 11px;
+    width: 100px;
   }
 }
 
