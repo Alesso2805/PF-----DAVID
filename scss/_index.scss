@@ -19,17 +19,23 @@
 #selecciones {
     margin: 0px 60px 0px 0px;
     font-size: 20px;
+    display: flex;
+    list-style-type: none;
 }
 
 .sub-selec {
     color: $white;
     margin: 0px 40px 0px 0px;
-    transition: color 0.3s ease;
+    transition: color .3s ease;
     text-decoration: none;
+    cursor: pointer;
+    transition: .2s;
 
     &:hover {
         color: $black;
-        cursor: pointer;
+        -ms-transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5); 
     }
 }
 
@@ -82,10 +88,14 @@
     margin: 15px;
     width: 30px;
     height: 30px;
+    transition: .2s;
 
     &:hover {
         color: $red;
         cursor: pointer;
+        -ms-transform: scale(1.5); /* IE 9 */
+        -webkit-transform: scale(1.5); /* Safari 3-8 */
+        transform: scale(1.5); 
     }
 }
 

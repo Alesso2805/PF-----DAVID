@@ -4,7 +4,7 @@ body {
 }
 
 header {
-  background-color: red;
+  background-image: linear-gradient(to bottom, red 90%, white);
   padding: 2rem 2rem;
 }
 
@@ -14,7 +14,7 @@ body {
 }
 
 footer {
-  background-color: black;
+  background-image: linear-gradient(to top, black 95%, white);
   padding: 20px 40px 20px 40px;
   color: white;
 }
@@ -50,6 +50,8 @@ a {
 #selecciones {
   margin: 0px 60px 0px 0px;
   font-size: 20px;
+  display: flex;
+  list-style-type: none;
 }
 
 .sub-selec {
@@ -57,10 +59,14 @@ a {
   margin: 0px 40px 0px 0px;
   transition: color 0.3s ease;
   text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s;
 }
 .sub-selec:hover {
   color: black;
-  cursor: pointer;
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 #welcome {
@@ -117,10 +123,14 @@ a {
   margin: 15px;
   width: 30px;
   height: 30px;
+  transition: 0.2s;
 }
 .icon:hover {
   color: red;
   cursor: pointer;
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5);
 }
 
 .terms-main {
@@ -171,10 +181,18 @@ a {
   margin-top: 0;
   justify-items: center;
 }
+.boxes:hover > :not(:hover) {
+  filter: brightness(0.8) saturate(2) contrast(1) blur(2px);
+  transition: filter 200ms linear, transform 200ms linear;
+}
 
 .card {
   border-radius: 24px;
   width: 18rem;
+}
+.card:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
 }
 
 .card-img-top {
@@ -212,8 +230,8 @@ a {
   transition: all 0.2s;
   color: white;
   width: 100%;
-  --bs-btn-hover-bg: $black;
-  --bs-btn-active-bg: $black;
+  --bs-btn-hover-bg: black;
+  --bs-btn-active-bg: black;
 }
 
 .contact {
@@ -276,6 +294,10 @@ a {
   border-radius: 15px;
   padding: 15px;
   border: 1px solid #ccc;
+}
+.box:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
 }
 
 .direccion, .numero {
@@ -498,6 +520,7 @@ a {
   }
   #selecciones {
     margin: 0;
+    display: list-item;
   }
   .collapse-horizontal {
     display: flex;
@@ -525,6 +548,7 @@ a {
   }
   #selecciones {
     margin: 0;
+    display: list-item;
   }
   .collapse-horizontal {
     display: flex;
@@ -541,6 +565,7 @@ a {
 @media screen and (max-width: 700px) {
   #selecciones {
     margin: 0;
+    display: list-item;
   }
   .collapse-horizontal {
     display: flex;
@@ -569,6 +594,7 @@ a {
   }
   #selecciones {
     margin: 0;
+    display: list-item;
   }
   .title {
     font-size: 30px;
@@ -583,6 +609,7 @@ a {
     width: 100%;
   }
   .sub-selec {
+    display: flex;
     font-size: 15px;
     display: flex;
     justify-content: center;
